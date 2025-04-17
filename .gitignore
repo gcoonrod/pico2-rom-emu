@@ -1,0 +1,75 @@
+# KiCad files to ignore
+
+# Backup and autosave files
+*auto_saved_files*
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl-bak
+*.kicad_wks-bak
+*.kicad_mod-bak
+*.kicad_sym-bak
+*.kicad_dcm-bak
+*.kicad_pcb-bak
+*-backups/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.~*
+*.lck
+
+# Output files
+*.net
+*.xml
+*.cmp
+*.dsn
+*.ses
+*.b#*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl-bak
+
+# Simulation files
+*.cir
+*.raw
+*.log
+
+# Gerber and manufacturing files
+*.gbr
+*.drl
+*.gbl
+*.gbo
+*.gbs
+*.gtl
+*.gto
+*.gts
+*.gm1
+*.gm2
+*.drl
+*.dri
+*.map
+*.fab
+*.pos
+*.csv
+
+# Other generated files
+*.zip
+*.tar.gz
+*.tgz
+
+# MicroPython compiled files
+*.mpy
+
+# REPL history
+.history
+
+# Pyboard files
+boot.py
+main.py
+
+# Thonny IDE files
+*.upl
+*.upl.py
