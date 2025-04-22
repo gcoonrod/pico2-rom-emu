@@ -9,6 +9,7 @@
 		(date "2025-04-16")
 		(rev "1")
 		(company "Grackle Computing")
+		(comment 1 "CC BY-SA-NC 4.0")
 	)
 	(lib_symbols
 		(symbol "74xx:74HCT574"
@@ -7156,7 +7157,7 @@
 	)
 	(text "ROM Control\nSharing Logic"
 		(exclude_from_sim no)
-		(at 195.58 86.36 0)
+		(at 196.85 88.9 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -9582,7 +9583,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 86.36) (xy 148.59 86.36)
+			(xy 128.27 86.36) (xy 146.05 86.36)
 		)
 		(stroke
 			(width 0)
@@ -9592,7 +9593,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 83.82) (xy 146.05 83.82)
+			(xy 83.82 83.82) (xy 148.59 83.82)
 		)
 		(stroke
 			(width 0)
@@ -10062,16 +10063,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 86.36) (xy 148.59 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "711992d4-68b0-4ca2-9b5a-7584d82a6c33")
-	)
-	(wire
-		(pts
 			(xy 35.56 59.69) (xy 35.56 60.96)
 		)
 		(stroke
@@ -10399,6 +10390,16 @@
 			(type default)
 		)
 		(uuid "8884d36d-26d0-4faf-90cb-10dae311b82d")
+	)
+	(wire
+		(pts
+			(xy 148.59 83.82) (xy 148.59 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88898ece-6236-4a47-aade-44ba530b28a9")
 	)
 	(wire
 		(pts
@@ -10909,16 +10910,6 @@
 			(type default)
 		)
 		(uuid "a4c2d656-02c8-433d-9582-9fc019bb906b")
-	)
-	(wire
-		(pts
-			(xy 146.05 83.82) (xy 146.05 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a62c132c-865e-4625-a3e7-0f6fcdebc7bc")
 	)
 	(bus
 		(pts
@@ -12432,6 +12423,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 86.36) (xy 146.05 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbb0d00e-aaa4-4728-b832-2fe42a0df911")
+	)
+	(wire
+		(pts
 			(xy 104.14 35.56) (xy 106.68 35.56)
 		)
 		(stroke
@@ -12641,7 +12642,7 @@
 		(uuid "0882df89-0488-4410-a5dc-62014815d1a8")
 	)
 	(label "LADL"
-		(at 140.97 125.73 180)
+		(at 140.97 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12852,7 +12853,7 @@
 		(uuid "26c5be53-fc7f-4973-9059-b6ea823779ef")
 	)
 	(label "XDA4"
-		(at 82.55 140.97 0)
+		(at 82.55 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12984,7 +12985,7 @@
 		(uuid "39e285fd-73b9-4395-9d98-589be3ae7b56")
 	)
 	(label "XDA5"
-		(at 82.55 143.51 0)
+		(at 82.55 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13134,7 +13135,7 @@
 		(uuid "572caac7-0739-4b2c-ad6c-2eaf1f4263b0")
 	)
 	(label "XDA2"
-		(at 82.55 135.89 0)
+		(at 82.55 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13461,7 +13462,7 @@
 		(uuid "861ba21e-7643-4693-b5b3-5f26046eb52c")
 	)
 	(label "XDA3"
-		(at 82.55 138.43 0)
+		(at 82.55 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13541,7 +13542,7 @@
 		(uuid "99c1c88a-9e5d-4f52-a620-45bfc028e241")
 	)
 	(label "XDA1"
-		(at 82.55 133.35 0)
+		(at 82.55 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13581,7 +13582,7 @@
 		(uuid "a26668e0-165a-47fe-9cee-011fb30762a4")
 	)
 	(label "XDA7"
-		(at 82.55 148.59 0)
+		(at 82.55 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13903,7 +13904,7 @@
 		(uuid "e5e8e2c9-0380-4ea5-a218-aeefd7de2d76")
 	)
 	(label "XDA0"
-		(at 82.55 130.81 0)
+		(at 82.55 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13923,7 +13924,7 @@
 		(uuid "e862ed53-5ca7-44a2-bf29-3e080fa37ff6")
 	)
 	(label "XDA6"
-		(at 82.55 146.05 0)
+		(at 82.55 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14033,7 +14034,7 @@
 		(uuid "f8fc0f3a-487c-4ee8-ba69-7abb446882ed")
 	)
 	(label "LADH"
-		(at 140.97 128.27 180)
+		(at 140.97 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14709,8 +14710,8 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "1e798e2c-5b4f-4dc1-b62f-4cdc6ad4557a")
 		(property "Reference" "H4"
@@ -17477,7 +17478,7 @@
 	)
 	(symbol
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
-		(at 196.85 173.99 0)
+		(at 213.36 173.99 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -17486,7 +17487,7 @@
 		(fields_autoplaced yes)
 		(uuid "898ccf11-1597-45f3-a1b4-e7f0b5ff7dac")
 		(property "Reference" "#SYM1"
-			(at 196.85 167.005 0)
+			(at 213.36 167.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17495,7 +17496,7 @@
 			)
 		)
 		(property "Value" "Logo_Open_Hardware_Small"
-			(at 196.85 179.705 0)
+			(at 213.36 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17504,7 +17505,7 @@
 			)
 		)
 		(property "Footprint" "Symbol:OSHW-Symbol_8.9x8mm_Copper"
-			(at 196.85 173.99 0)
+			(at 213.36 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17513,7 +17514,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 173.99 0)
+			(at 213.36 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17522,7 +17523,7 @@
 			)
 		)
 		(property "Description" "Open Hardware logo, small"
-			(at 196.85 173.99 0)
+			(at 213.36 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18993,7 +18994,7 @@
 				)
 			)
 		)
-		(property "Value" "HDR_28C256"
+		(property "Value" "N3440-5302RB"
 			(at 245.11 70.866 0)
 			(effects
 				(font
@@ -19154,8 +19155,8 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "bbe20160-35ef-4a12-91f1-2a8dc22de15c")
 		(property "Reference" "H1"
@@ -19416,7 +19417,7 @@
 	)
 	(symbol
 		(lib_id "GrackleLogo12mm:LOGO")
-		(at 184.15 173.99 0)
+		(at 184.15 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19425,7 +19426,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca327d40-2f30-4f4e-a382-243bbc04af80")
 		(property "Reference" "#G1"
-			(at 184.15 168.6237 0)
+			(at 184.15 166.0837 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19434,7 +19435,7 @@
 			)
 		)
 		(property "Value" "GrackleComputing"
-			(at 184.15 179.3563 0)
+			(at 184.15 176.8163 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19443,7 +19444,7 @@
 			)
 		)
 		(property "Footprint" "CustomSymbols:GrackleLogo12mm"
-			(at 184.15 173.99 0)
+			(at 184.15 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19452,7 +19453,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 173.99 0)
+			(at 184.15 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19461,7 +19462,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 173.99 0)
+			(at 184.15 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19484,8 +19485,8 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "cedeb45e-5d93-4e4d-8f28-c27513a15c24")
 		(property "Reference" "H3"
@@ -19551,8 +19552,8 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d3a54005-01c2-40b9-a778-b423acd8a15b")
 		(property "Reference" "H2"
