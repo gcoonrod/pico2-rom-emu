@@ -1,30 +1,22 @@
-# Pico-ROM-Emu
+# Pico2-ROM-Emu
 
-Pico-ROM-Emu is a project designed to emulate ROM functionality using the Raspberry Pi Pico. It consists of two main sub-projects: a KiCad-based physical circuit schematic and PCB design, and MicroPython-based firmware.
+Pico2-ROM-Emu is a project designed to emulate 28 pin EEPROM (28C256 compatible) functionality using the Raspberry Pi Pico2 and a fast SRAM.
 
-## Sub-Projects
+![front render](./assets/Pico2RomEmu_3D_Front.png)
 
-### 1. KiCad Circuit Schematic and PCB Design
-This sub-project contains the hardware design files for the Pico-ROM-Emu. Using KiCad, it provides:
-- A detailed circuit schematic for the emulator.
-- PCB layout files for manufacturing the hardware.
+## Theory of Operation
+The theory of operation is relatively simple:
 
-### 2. MicroPython Firmware (`pico-rom-emu-firmware`)
+1. Assert active-low reset signal
+2. Fill SRAM with ROM data using octal latches 
+3. Hi-Z the latches and de-assert reset
+4. SRAM is directly connected to DUT EEPROM socket via ribbon cable 
+
+## Circuit Schematic
+![schematic diagram](./assets/schematic.png)
+
+## MicroPython Firmware (`pico-rom-emu-firmware`)
 This sub-project contains the firmware written in MicroPython. It is responsible for:
 - Copying provided ROM binary images to the embedded SRAM
-
-## Getting Started
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/gcoonrod/pico-rom-emu.git
-    ```
-2. Navigate to the respective sub-project directories for setup instructions.
-
-## License
-This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](LICENSE).
-
-## Contributions
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## Contact
-For questions or feedback, feel free to reach out via the repository's issue tracker.
+- Accepting new ROM images over USB serial connection
+- Controlling DUT reset signal
