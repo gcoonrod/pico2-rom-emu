@@ -73,3 +73,6 @@ main.py
 # Thonny IDE files
 *.upl
 *.upl.py
+
+# Rom binaries
+rom.bin

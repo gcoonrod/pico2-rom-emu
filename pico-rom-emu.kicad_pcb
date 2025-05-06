@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "RPi Pico 2 32k x 8 ROM Emulator")
-		(date "2025-04-16")
+		(date "2025-05-06")
 		(rev "1")
 		(company "Grackle Computing")
 		(comment 1 "CC BY-NC-SA 4.0")
@@ -120,7 +120,7 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(layerselection 0x00000000_00000000_55555555_5755ffbf)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -145,18 +145,18 @@
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plot_black_and_white yes)
+			(plot_black_and_white no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 5)
 			(mirror no)
-			(drillshape 0)
+			(drillshape 2)
 			(scaleselection 1)
-			(outputdirectory "production/")
+			(outputdirectory "assets/")
 		)
 	)
 	(net 0 "")
@@ -2007,10 +2007,11 @@
 			(net 74 "unconnected-(J1-PadMP)_1")
 			(pinfunction "MP")
 			(pintype "passive+no_connect")
-			(uuid "7c1d3d55-eca3-4fcf-9891-dd36a54289cf")
+			(uuid "7869908f-cb35-414e-ab86-b30352af621e")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x15-1MP_P2.54mm_Latch_Horizontal.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2022,6 +2023,7 @@
 			)
 		)
 		(model "C:/Users/Greg/dev/Mouser/3D/N3440-5302RB.stp"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2030,6 +2032,28 @@
 			)
 			(rotate
 				(xyz -0 -0 90)
+			)
+		)
+		(model "C:/Users/Greg/dev/Mouser/3D/3440-5003.stp"
+			(offset
+				(xyz 1.25 -17.75 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -90)
+			)
+		)
+		(model "C:/Users/Greg/dev/Mouser/3D/long-latch-01.stp"
+			(offset
+				(xyz 1.5 -5 -0.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -90)
 			)
 		)
 	)
@@ -3239,6 +3263,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/Greg/dev/Mouser/3D/SM03B-SRSS-TB_LF__SN_.stp"
+			(offset
+				(xyz 0 1.5 3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -14768,6 +14803,18 @@
 		)
 		(embedded_fonts no)
 	)
+	(gr_poly
+		(pts
+			(xy 116.078 121.158) (xy 115.57 119.888) (xy 116.586 119.888)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "6b9d04f0-47cf-4895-a636-40878f5bc33c")
+	)
 	(gr_circle
 		(center 119.38 130.302)
 		(end 119.38 132.842)
@@ -14988,15 +15035,27 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "+5V"
+	(gr_text "5V"
 		(at 179.324 97.536 90)
 		(layer "F.SilkS")
 		(uuid "1712e066-5b5d-4146-9687-5cc0481ec639")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.2)
+				(size 1.27 1.27)
+				(thickness 0.254)
 				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Remove for USB power only"
+		(at 116.078 119.634 90)
+		(layer "F.SilkS")
+		(uuid "4311d0c0-b69d-4e13-81c6-b6632cfa4a16")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
 			)
 			(justify left)
 		)
@@ -15026,7 +15085,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "xRST"
+	(gr_text "x~{RST}"
 		(at 165.737 98.298 0)
 		(layer "F.SilkS")
 		(uuid "5d8f5c74-e56b-4616-b0d6-21bb48850e27")
@@ -15126,14 +15185,14 @@
 			(justify left)
 		)
 	)
-	(gr_text "+3V3"
+	(gr_text "3V3"
 		(at 181.864 97.536 90)
 		(layer "F.SilkS")
 		(uuid "c897fb5c-1f95-4c50-aa46-091674a4ced3")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.2)
+				(size 1.27 1.27)
+				(thickness 0.254)
 				(bold yes)
 			)
 			(justify left)
