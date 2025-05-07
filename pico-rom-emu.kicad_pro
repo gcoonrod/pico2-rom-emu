@@ -538,7 +538,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "assets/",
+      "plot": "production/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
